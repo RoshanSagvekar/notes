@@ -1,0 +1,60 @@
+Git –version
+	Tell version of git
+Git status
+	Tells git status
+Git init
+	Initialized current working directing as github repository.
+
+
+#To configured git
+
+git config --global user.name "RoshanSagvekar"
+git config --global user.email "roshansagvekar1299@gmail.com"
+
+#To check configuration 
+
+git config --global user.name
+git config --global user.email
+
+#To  create remote
+git remote add origin git@github.com:RoshanSagvekar/notes.git
+
+
+
+# generating SSH key
+
+profile->settings->SSH and GPG keys->generating new ssh key
+
+->generating to new ssh key and adding it to ssh agent
+	
+	1.ssh-keygen -t rsa -b 4096 -C "roshansagvekar1299@gmail.com"
+
+	2.eval "$(ssh-agent -s)"
+
+	3.ssh-add ~/.ssh/id_rsa
+
+	4.clip < ~/.ssh/id_rsa.pub
+
+==========SSH KEYS========
+
+
+
+#ADDING THE PROJECT TO GITHUB
+
+git status
+created a file git repo folder
+git status
+
+git add .
+
+git commit -m "message"
+
+git push -u origin master
+
+git restore .
+
+git pull -u origin master
+
+
+
+https://github.com/MrityunjaykPandey/code_snippet/tree/master/Python%20Lecture%20Notes
